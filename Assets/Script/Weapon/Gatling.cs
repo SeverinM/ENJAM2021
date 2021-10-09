@@ -38,12 +38,20 @@ public class Gatling : MonoBehaviour, IWeapon
 		StraightProjectile proj = instance.GetComponent<StraightProjectile>();
 		proj.transform.position = transform.position;
 
-		Vector2 finalDirection = Quaternion.AngleAxis(Random.RandomRange(-angleDispersion, angleDispersion), Vector3.forward) * transform.right;
+		Vector2 finalDirection = Quaternion.AngleAxis(Random.Range(-angleDispersion, angleDispersion), Vector3.forward) * transform.right;
 
 		if ( proj != null)
 		{
 			proj.Direction = finalDirection;
 			proj.Speed = speedProjectile;
 		}
+
+		if ( proj.SideID == 1 )
+			Debug.Log(proj.Speed);
+	}
+
+	void OnDestroy()
+	{
+		OnEndFire();
 	}
 }

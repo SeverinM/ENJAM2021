@@ -8,7 +8,7 @@ public class LookAtChar : MonoBehaviour
     Transform lookAt = null;
 
     [SerializeField]
-    float maxRotationPerFrame;
+    float speedRotation;
 
     // Start is called before the first frame update
     void Start()
@@ -20,6 +20,6 @@ public class LookAtChar : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.rotation = Quaternion.RotateTowards(transform.rotation, Quaternion.LookRotation(Vector3.forward,Vector3.up), maxRotationPerFrame);
+        transform.right = Vector3.Lerp(transform.right, (lookAt.position - transform.position).normalized, speedRotation * 0.01f);
     }
 }

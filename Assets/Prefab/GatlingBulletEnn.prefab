@@ -149,4 +149,4 @@ MonoBehaviour:
   damage: 1
   destroyOnNotHittable: 0
   destroyWhenHit: 1
-  DestroyAfter: 5
+  DestroyAfter: 3

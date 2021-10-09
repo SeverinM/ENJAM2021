@@ -25,12 +25,18 @@ public class WeaponHolder : MonoBehaviour
 	public void StartFire()
 	{
 		foreach (IWeapon weap in allWeapon)
-			weap.OnStartFire();
+		{
+			if ( weap != null )
+				weap.OnStartFire();
+		}
 	}
 
 	public void EndFire()
 	{
 		foreach (IWeapon weap in allWeapon)
-			weap.OnEndFire();
+		{
+			if ( weap != null )
+				weap.OnEndFire();
+		}
 	}
 }

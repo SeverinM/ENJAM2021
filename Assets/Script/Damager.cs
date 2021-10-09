@@ -6,6 +6,7 @@ public class Damager : MonoBehaviour
 {
     [SerializeField]
     int sideID = 0;
+	public int SideID => sideID;
 
     [SerializeField]
     int damage = 0;
