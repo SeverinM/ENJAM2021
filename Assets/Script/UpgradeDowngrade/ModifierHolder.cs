@@ -13,6 +13,7 @@ public class ModifierHolder : ScriptableObject
 		public Sprite icon;
 		public string malusName;
 		public GameObject prefab;
+		public bool enabled = true;
 
 		[System.NonSerialized]
 		public bool Acquired;

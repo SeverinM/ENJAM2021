@@ -36,6 +36,8 @@ public class WaveManager : MonoBehaviour
 	{
 		indexSubwave = 0;
 		indexWave++;
+		if (indexWave == currentData.waves.Count)
+			return;
 		currentWave = currentData.waves[indexWave];
 		CheckState();
 	}

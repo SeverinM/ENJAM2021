@@ -12,4 +12,40 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 95a829dbcb4383e4d8cbf96510e33180, type: 3}
   m_Name: ModifierData
   m_EditorClassIdentifier: 
-  modifiers: []
+  modifiers:
+  - ID: 0
+    name: Moteur physique qui rame
+    icon: {fileID: 21300000, guid: d3f9f79929c708d45b0cc96aa9af8fdd, type: 3}
+    malusName: Vous vous deplacez moins vite
+    prefab: {fileID: 0}
+    enabled: 1
+  - ID: 1
+    name: Mauvaise resolution
+    icon: {fileID: 21300000, guid: c084db22e43bd61499f3d42d7946ba31, type: 3}
+    malusName: Vous aimez le retro ?
+    prefab: {fileID: 0}
+    enabled: 1
+  - ID: 2
+    name: Input lag
+    icon: {fileID: 21300000, guid: a734389a53a8a384888da1abcad1dd1f, type: 3}
+    malusName: ...
+    prefab: {fileID: 0}
+    enabled: 1
+  - ID: 3
+    name: Framerate inconsistant
+    icon: {fileID: 21300000, guid: ec2db8ab6243b9545bbe7e137131b6c3, type: 3}
+    malusName: Le jeu freeze regulierement
+    prefab: {fileID: 0}
+    enabled: 1
+  - ID: 4
+    name: Son insupportable
+    icon: {fileID: 21300000, guid: fc88ce24a47f4014cb0ad237abc8d1dd, type: 3}
+    malusName: :)
+    prefab: {fileID: 0}
+    enabled: 1
+  - ID: 5
+    name: Absence de clear
+    icon: {fileID: 21300000, guid: fc88ce24a47f4014cb0ad237abc8d1dd, type: 3}
+    malusName: Les images se superposent
+    prefab: {fileID: 0}
+    enabled: 1
