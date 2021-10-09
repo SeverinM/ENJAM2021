@@ -27,6 +27,8 @@ public class WaveData : ScriptableObject
 		public float timeOffset;
 		public int numberOfKillRequired = 0;
 		public GameObject prefab;
+
+		[System.NonSerialized]
 		public bool scheduled = false;
 	}
 

@@ -15,6 +15,6 @@ public class PlayerController : MonoBehaviour
     public void SetupLookAt(Vector3 position)
     {
         position.z = transform.position.z;
-        transform.right = position - transform.position;
+        transform.up = position - transform.position;
     }
 }

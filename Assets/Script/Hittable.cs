@@ -33,7 +33,12 @@ public class Hittable : MonoBehaviour
     public event intParam OnHit;
     public event intParam OnHeal;
 
-    public void Hit(int value)
+	private void OnDestroy()
+	{
+        OnDeath = delegate { };
+        OnHit = delegate { };
+	}
+	public void Hit(int value)
 	{
         if (IsInvincible)
             return;

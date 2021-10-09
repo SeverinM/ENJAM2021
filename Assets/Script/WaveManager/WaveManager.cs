@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using DG.Tweening;
+using UnityEngine.Events;
 
 public class WaveManager : MonoBehaviour
 {
@@ -10,7 +11,12 @@ public class WaveManager : MonoBehaviour
 	WaveData.Wave currentWave;
 	int indexSubwave = 0;
 	int indexWave = 0;
+
+	[SerializeField]
 	WaveData currentData = null;
+
+	[SerializeField]
+	UnityEvent OnWaveEnd;
 
 	private void OnEnable()
 	{
@@ -52,7 +58,11 @@ public class WaveManager : MonoBehaviour
 			hit = instance.GetComponentInChildren<Hittable>();
 		if (hit != null)
 		{
-			hit.OnDeath += CheckSpawn;
+			hit.OnDeath += () =>
+			{
+				ennemyKilled++;
+				CheckSpawn();
+			};
 		}
 
 		instance.transform.DOMove(context.goToPosition, 1.0f).SetEase(context.curve).SetAutoKill(true).Play();
@@ -61,12 +71,11 @@ public class WaveManager : MonoBehaviour
 
 	void Endwave()
 	{
-
+		OnWaveEnd?.Invoke();
 	}
 
 	void CheckSpawn()
 	{
-		ennemyKilled++;
 		if ( ennemyKilled == currentWave.subwaves[indexSubwave].contexts.Count )
 		{
 			NextSubWave();
