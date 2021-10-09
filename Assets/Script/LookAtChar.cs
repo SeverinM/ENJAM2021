@@ -14,12 +14,12 @@ public class LookAtChar : MonoBehaviour
     void Start()
     {
         if (lookAt == null)
-            Destroy(this);
+            lookAt = PlayerHolder.PlayerTransform;
     }
 
     // Update is called once per frame
     void Update()
     {
-        transform.right = Vector3.Lerp(transform.right, (lookAt.position - transform.position).normalized, speedRotation * 0.01f);
+        transform.up = Vector3.Lerp(transform.up, (lookAt.position - transform.position).normalized, speedRotation * 0.01f);
     }
 }

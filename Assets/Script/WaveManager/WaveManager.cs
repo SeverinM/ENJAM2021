@@ -79,6 +79,7 @@ public class WaveManager : MonoBehaviour
 		if ( ennemyKilled == currentWave.subwaves[indexSubwave].contexts.Count )
 		{
 			NextSubWave();
+			return;
 		}
 
 		foreach(WaveData.SpawnContext context in currentWave.subwaves[indexSubwave].contexts )
