@@ -68,8 +68,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Bonus 1
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: ddbd0d9ea38d1c647ad2df33e379c064, type: 2}
+  m_sharedMaterial: {fileID: 2722649403552461893, guid: ddbd0d9ea38d1c647ad2df33e379c064, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -93,7 +93,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 72
+  m_fontSize: 18
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -460,14 +460,14 @@ MonoBehaviour:
       m_Calls: []
   m_text: Vous etes trop fort
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: ddbd0d9ea38d1c647ad2df33e379c064, type: 2}
+  m_sharedMaterial: {fileID: 2722649403552461893, guid: ddbd0d9ea38d1c647ad2df33e379c064, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4289440702
+    rgba: 4289045945
   m_fontColor: {r: 0.7264151, g: 0.6469206, b: 0.6469206, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
@@ -485,7 +485,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 44.1
+  m_fontSize: 5.4
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -615,14 +615,14 @@ MonoBehaviour:
       m_Calls: []
   m_text: Mais en fait trop pas
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: ddbd0d9ea38d1c647ad2df33e379c064, type: 2}
+  m_sharedMaterial: {fileID: 2722649403552461893, guid: ddbd0d9ea38d1c647ad2df33e379c064, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4281874600
+    rgba: 4282071979
   m_fontColor: {r: 0.6698113, g: 0.23001064, b: 0.23001064, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
@@ -640,7 +640,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 44.1
+  m_fontSize: 5
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
