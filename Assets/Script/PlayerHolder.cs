@@ -1,0 +1,42 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using DG.Tweening;
+
+public class PlayerHolder : MonoBehaviour
+{
+    [SerializeField]
+    Hittable hittable;
+	SpriteRenderer sprt;
+
+	private void Awake()
+	{
+		sprt = GetComponent<SpriteRenderer>();
+	}
+
+	private void OnEnable()
+	{
+		hittable.OnStartRecovery += StartReco;
+		hittable.OnEndRecovery += EndReco;
+		hittable.OnDeath += () => Destroy(gameObject);
+	}
+
+	private void OnDisable()
+	{
+		hittable.OnStartRecovery -= StartReco;
+		hittable.OnEndRecovery -= EndReco;
+		hittable.OnDeath -= () => Destroy(gameObject);
+	}
+
+	Tween tween = null;
+	void StartReco()
+	{
+		tween = sprt.DOFade(0, 0.2f).SetLoops(-1, LoopType.Yoyo).Play();
+	}
+	void EndReco()
+	{
+		sprt.color = Color.white;
+		tween.Kill();
+	}
+
+}
