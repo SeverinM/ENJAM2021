@@ -6,7 +6,7 @@ using DG.Tweening;
 public class Shotgun : MonoBehaviour, IWeapon
 {
 	[SerializeField]
-	float fireRate = 1.0f;
+	float fireRate = 0.5f;
 
 	[SerializeField]
 	GameObject prefab = null;
@@ -23,29 +23,39 @@ public class Shotgun : MonoBehaviour, IWeapon
 	[SerializeField]
 	int numberOfBullet = 10;
 
-	Sequence seq = null;
+	bool shooting = false;
+	float shootingCooldown = 0;
+
 	public void OnEndFire()
 	{
-		seq.Kill();
+		shooting = false;
 	}
 
 	public void OnStartFire()
 	{
-		seq = DOTween.Sequence()
-			.AppendCallback(() => Fire())
-			.AppendInterval(1.0f / fireRate)
-			.SetLoops(-1, LoopType.Restart)
-			.Play();
+		shooting = true;
 	}
 
+	private void Update()
+	{
+		if (shootingCooldown >= 0.0f)
+		{
+			shootingCooldown -= Mathf.Min(shootingCooldown, Time.deltaTime);
+		}
+		if (shootingCooldown <= 0.0f && shooting)
+		{
+			Fire();
+		}
+	}
 	void Fire()
 	{
+		shootingCooldown = 1.0f / fireRate;
 		for (int k = 0; k < numberOfBullet; k++) {
 			GameObject instance = Instantiate(prefab);
 			StraightProjectile proj = instance.GetComponent<StraightProjectile>();
 			proj.transform.position = transform.position;
 
-			Vector2 finalDirection = Quaternion.AngleAxis(Random.RandomRange(-angleDispersion, angleDispersion), Vector3.forward) * transform.right;
+			Vector2 finalDirection = Quaternion.AngleAxis(Random.RandomRange(-angleDispersion, angleDispersion), Vector3.forward) * transform.up;
 
 			if (proj != null)
 			{

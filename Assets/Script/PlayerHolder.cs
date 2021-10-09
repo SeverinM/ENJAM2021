@@ -9,9 +9,12 @@ public class PlayerHolder : MonoBehaviour
     Hittable hittable;
 	SpriteRenderer sprt;
 
+	public static Transform PlayerTransform = null;
+
 	private void Awake()
 	{
 		sprt = GetComponent<SpriteRenderer>();
+		PlayerTransform = transform;
 	}
 
 	private void OnEnable()

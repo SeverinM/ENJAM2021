@@ -37,7 +37,7 @@ public class Hittable : MonoBehaviour
 	{
         OnDeath = delegate { };
         OnHit = delegate { };
-	}
+    }
 	public void Hit(int value)
 	{
         if (IsInvincible)
