@@ -8,7 +8,7 @@ public class PlayerInput : MonoBehaviour
     [SerializeField]
     PlayerController controller;
 
-    [SerializeField]
+    
     Player rwPlayer;
 
     [SerializeField]
