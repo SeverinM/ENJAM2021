@@ -29,14 +29,17 @@ public class WaveManager : MonoBehaviour
 			Destroy(this);
 		}
 		currentWave = currentData.waves[0];
-		CheckSpawn();
+		CheckState();
 	}
 
-	void NextWave()
+	public void NextWave()
 	{
 		indexSubwave = 0;
 		indexWave++;
+		if (indexWave == currentData.waves.Count)
+			return;
 		currentWave = currentData.waves[indexWave];
+		CheckState();
 	}
 
 	void NextSubWave()
@@ -46,6 +49,10 @@ public class WaveManager : MonoBehaviour
 		if (indexSubwave >= currentWave.subwaves.Count)
 		{
 			Endwave();
+		}
+		else
+		{
+			CheckState();
 		}
 	}
 
@@ -61,7 +68,7 @@ public class WaveManager : MonoBehaviour
 			hit.OnDeath += () =>
 			{
 				ennemyKilled++;
-				CheckSpawn();
+				CheckState();
 			};
 		}
 
@@ -71,10 +78,14 @@ public class WaveManager : MonoBehaviour
 
 	void Endwave()
 	{
-		OnWaveEnd?.Invoke();
+		DOTween.Sequence()
+			.AppendInterval(3.0f)
+			.AppendCallback(() => OnWaveEnd?.Invoke())
+			.SetAutoKill(true)
+			.Play();
 	}
 
-	void CheckSpawn()
+	void CheckState()
 	{
 		if ( ennemyKilled == currentWave.subwaves[indexSubwave].contexts.Count )
 		{
