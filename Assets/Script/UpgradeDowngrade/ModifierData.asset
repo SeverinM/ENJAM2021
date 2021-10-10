@@ -41,7 +41,7 @@ MonoBehaviour:
     name: Son insupportable
     icon: {fileID: 21300000, guid: fc88ce24a47f4014cb0ad237abc8d1dd, type: 3}
     malusName: :)
-    prefab: {fileID: 0}
+    prefab: {fileID: 1416536686448744368, guid: 1ebada720fd6f234cae2aec0131fac3f, type: 3}
     enabled: 1
   - ID: 5
     name: Absence de clear

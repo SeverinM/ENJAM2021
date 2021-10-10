@@ -44,6 +44,11 @@ public class ModifierManager : MonoBehaviour
 			allSlotsID.Add(modifier.ID);
 			OnUpdateSlot?.Invoke(i, modifier);
 		}
+
+		for (int i = numberToFind; i < 3; i++)
+		{
+			OnUpdateSlot?.Invoke(i, null);
+		}
 	}
 
 	public void AcquireModifier(int ID)

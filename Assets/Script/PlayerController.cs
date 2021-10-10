@@ -7,7 +7,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField]
     float speed;
 
-    private void OnEnable()
+    private void Start()
     {
         ModifierManager.Instance.OnPickedModifier += PickModifier;
     }
