@@ -215,7 +215,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 0.8113208, g: 0.7608046, b: 0.7608046, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -682,4 +682,5 @@ MonoBehaviour:
   title: {fileID: 7199450814061477517}
   icon: {fileID: 7502318799175428862}
   descr1: {fileID: 771981488456336368}
+  btn: {fileID: 0}
   id: 0

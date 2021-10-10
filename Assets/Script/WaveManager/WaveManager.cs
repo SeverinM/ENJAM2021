@@ -10,7 +10,7 @@ public class WaveManager : MonoBehaviour
 	int ennemyKilled = 0;
 	WaveData.Wave currentWave;
 	int indexSubwave = 0;
-	int indexWave = 0;
+	int indexWave = -1;
 
 	[SerializeField]
 	WaveData currentData = null;
@@ -31,8 +31,6 @@ public class WaveManager : MonoBehaviour
 		{
 			Destroy(this);
 		}
-		currentWave = currentData.waves[0];
-		CheckState();
 	}
 
 	public void NextWave()
@@ -62,6 +60,10 @@ public class WaveManager : MonoBehaviour
 	void SpawnEnemy(WaveData.SpawnContext context)
 	{
 		GameObject instance = Instantiate(context.prefab);
+
+		if (ModifierManager.Instance.GetModifier(5).Acquired)
+			instance.GetComponent<SpriteRenderer>().enabled = false;
+
 		instance.transform.position = context.startPosition;
 		Hittable hit = instance.GetComponent<Hittable>();
 		if (hit == null)
@@ -107,6 +109,9 @@ public class WaveManager : MonoBehaviour
 
 	void CheckState()
 	{
+		Debug.Log("Subwave : " + indexSubwave);
+		Debug.Log("Wave : " + indexWave);
+		Debug.Log("====");
 		if ( ennemyKilled == currentWave.subwaves[indexSubwave].contexts.Count )
 		{
 			NextSubWave();

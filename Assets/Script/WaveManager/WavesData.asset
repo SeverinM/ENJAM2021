@@ -15,7 +15,7 @@ MonoBehaviour:
   waves:
   - subwaves:
     - contexts:
-      - startPosition: {x: 10, y: 0}
+      - startPosition: {x: 30, y: 0}
         goToPosition: {x: 0, y: 0}
         curve:
           serializedVersion: 2
@@ -43,7 +43,7 @@ MonoBehaviour:
           m_RotationOrder: 0
         timeOffset: 0
         numberOfKillRequired: 0
-        prefab: {fileID: 4471341077509105319, guid: a168c34298cf6464a9b9dcce6cd6fbe8, type: 3}
+        prefab: {fileID: 4694597395554261859, guid: 0d67727d37b33c9458128e3b3966aece, type: 3}
     - contexts:
       - startPosition: {x: -30, y: 0}
         goToPosition: {x: -2, y: -1}
@@ -73,7 +73,7 @@ MonoBehaviour:
           m_RotationOrder: 0
         timeOffset: 1
         numberOfKillRequired: 0
-        prefab: {fileID: 4471341077509105319, guid: a168c34298cf6464a9b9dcce6cd6fbe8, type: 3}
+        prefab: {fileID: 4694597395554261859, guid: 0d67727d37b33c9458128e3b3966aece, type: 3}
       - startPosition: {x: -30, y: -10}
         goToPosition: {x: -2, y: -3}
         curve:
@@ -102,7 +102,7 @@ MonoBehaviour:
           m_RotationOrder: 0
         timeOffset: 3
         numberOfKillRequired: 0
-        prefab: {fileID: 4471341077509105319, guid: a168c34298cf6464a9b9dcce6cd6fbe8, type: 3}
+        prefab: {fileID: 1998882412756837238, guid: 9095116925f975640838d6b23270843a, type: 3}
   - subwaves:
     - contexts:
       - startPosition: {x: 0, y: 20}
@@ -133,4 +133,4 @@ MonoBehaviour:
           m_RotationOrder: 0
         timeOffset: 0
         numberOfKillRequired: 0
-        prefab: {fileID: 4471341077509105319, guid: a168c34298cf6464a9b9dcce6cd6fbe8, type: 3}
+        prefab: {fileID: 4694597395554261859, guid: 0d67727d37b33c9458128e3b3966aece, type: 3}
