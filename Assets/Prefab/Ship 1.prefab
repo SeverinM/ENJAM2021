@@ -429,6 +429,8 @@ GameObject:
   - component: {fileID: 8397371950828629110}
   - component: {fileID: 8397371950828629105}
   - component: {fileID: 8397371950828629104}
+  - component: {fileID: -1128940162374837218}
+  - component: {fileID: 2717298979763525636}
   m_Layer: 0
   m_Name: Ship 1
   m_TagString: Untagged
@@ -532,6 +534,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   controller: {fileID: 8397371950828629108}
   holder: {fileID: 8397371950828629105}
+  diviser: 1
 --- !u!114 &8397371950828629110
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -599,3 +602,49 @@ MonoBehaviour:
   m_ShapePathHash: -1797401269
   m_Mesh: {fileID: 0}
   m_InstanceId: 36596
+--- !u!114 &-1128940162374837218
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8397371950828629067}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Event: event:/SFX/PLAYER/DEPLACEMENT/MOTOR
+  PlayEvent: 1
+  StopEvent: 2
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 0
+  OverrideMaxDistance: 0
+--- !u!114 &2717298979763525636
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8397371950828629067}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Event: event:/SFX/PLAYER/DEPLACEMENT/WRAP
+  PlayEvent: 2
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 0
+  OverrideMaxDistance: 0

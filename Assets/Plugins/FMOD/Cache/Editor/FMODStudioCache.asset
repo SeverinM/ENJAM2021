@@ -59,7 +59,7 @@ MonoBehaviour:
   Path: event:/SFX/PLAYER/DEPLACEMENT/MOVEMENT
   guid: 35522a198032484696ca660a6484346f
   Banks:
-  - {fileID: 429921038001354484}
+  - {fileID: -5052162609451593570}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -89,6 +89,50 @@ MonoBehaviour:
   Type: 1
   IsGlobal: 0
   Exists: 0
+--- !u!114 &-8520144128650960948
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/INGAME/Vague
+  m_EditorClassIdentifier: 
+  Name: Vague
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Type: 1
+  IsGlobal: 0
+  Exists: 0
+--- !u!114 &-8169561757604350072
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/INGAME/Ennemies
+  m_EditorClassIdentifier: 
+  Name: Ennemies
+  Min: 0
+  Max: 100
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Type: 0
+  IsGlobal: 0
+  Exists: 1
 --- !u!114 &-8157682533615350152
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -109,6 +153,50 @@ MonoBehaviour:
     data1: 0
     data2: 0
   Type: 1
+  IsGlobal: 0
+  Exists: 0
+--- !u!114 &-7807055691616061704
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/INGAME/Vague
+  m_EditorClassIdentifier: 
+  Name: Vague
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Type: 1
+  IsGlobal: 0
+  Exists: 0
+--- !u!114 &-7635975710249434972
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/INGAME/Ennemies
+  m_EditorClassIdentifier: 
+  Name: Ennemies
+  Min: 0
+  Max: 100
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Type: 0
   IsGlobal: 0
   Exists: 0
 --- !u!114 &-7542511220751341400
@@ -192,6 +280,28 @@ MonoBehaviour:
   Name: Parameter 1
   Min: 0
   Max: 100
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Type: 1
+  IsGlobal: 0
+  Exists: 0
+--- !u!114 &-6302788607800470662
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/INGAME/Vague
+  m_EditorClassIdentifier: 
+  Name: Vague
+  Min: 0
+  Max: 1
   Default: 0
   ID:
     data1: 0
@@ -375,6 +485,24 @@ MonoBehaviour:
   Type: 1
   IsGlobal: 0
   Exists: 0
+--- !u!114 &-5052162609451593570
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: Build FMOD/Desktop/Master.bank
+  Name: Master
+  StudioPath: bank:/Master
+  lastModified: 637694651278329919
+  FileSizes: []
+  Exists: 1
 --- !u!114 &-4780300158806496214
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -390,7 +518,7 @@ MonoBehaviour:
   Path: event:/SFX/ENNEMIES/ENNEMIE_EXPLOSION
   guid: 6fd938dea6dd834b92398c26cc3c1315
   Banks:
-  - {fileID: 429921038001354484}
+  - {fileID: -5052162609451593570}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -398,6 +526,50 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+--- !u!114 &-4742657432364868996
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/INGAME/Vague
+  m_EditorClassIdentifier: 
+  Name: Vague
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Type: 1
+  IsGlobal: 0
+  Exists: 0
+--- !u!114 &-4705891956904855840
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/INGAME/Parameter 1
+  m_EditorClassIdentifier: 
+  Name: Parameter 1
+  Min: 0
+  Max: 100
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Type: 1
+  IsGlobal: 0
+  Exists: 0
 --- !u!114 &-4633136078416178056
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -462,6 +634,50 @@ MonoBehaviour:
     data1: 0
     data2: 0
   Type: 1
+  IsGlobal: 0
+  Exists: 0
+--- !u!114 &-4052772848978361414
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/INGAME/Vague
+  m_EditorClassIdentifier: 
+  Name: Vague
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Type: 1
+  IsGlobal: 0
+  Exists: 0
+--- !u!114 &-3907092931587863976
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/INGAME/Ennemies
+  m_EditorClassIdentifier: 
+  Name: Ennemies
+  Min: 0
+  Max: 100
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Type: 0
   IsGlobal: 0
   Exists: 0
 --- !u!114 &-3120289165147512903
@@ -543,18 +759,18 @@ MonoBehaviour:
   m_Name: event:/MUSIC/INGAME
   m_EditorClassIdentifier: 
   Path: event:/MUSIC/INGAME
-  guid: 344288dec5e4ec47ae8945992945bd01
+  guid: ef86aa891cdeaa4894623aff05bf1030
   Banks:
-  - {fileID: 429921038001354484}
-  IsStream: 0
+  - {fileID: -5052162609451593570}
+  IsStream: 1
   Is3D: 0
   IsOneShot: 0
   Parameters:
-  - {fileID: 5883519586134871229}
-  - {fileID: 6204734786365431809}
+  - {fileID: 2558087695733934963}
+  - {fileID: -8169561757604350072}
   MinDistance: 0
   MaxDistance: 0
-  Length: 22000
+  Length: 82366
 --- !u!114 &-2019802698303289780
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -570,7 +786,7 @@ MonoBehaviour:
   Path: event:/SFX/PLAYER/GUNS/GATLING
   guid: 2fcc4a2797c443438b40058f2a168388
   Banks:
-  - {fileID: 429921038001354484}
+  - {fileID: -5052162609451593570}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -635,8 +851,8 @@ MonoBehaviour:
   m_Name: FMODStudioCache
   m_EditorClassIdentifier: 
   EditorBanks:
-  - {fileID: 4833059702807810409}
-  - {fileID: 429921038001354484}
+  - {fileID: 4233355637240472109}
+  - {fileID: -5052162609451593570}
   EditorEvents:
   - {fileID: -8940598231758148193}
   - {fileID: 3520882301229790625}
@@ -647,12 +863,13 @@ MonoBehaviour:
   - {fileID: 1224702601838866401}
   - {fileID: -4780300158806496214}
   - {fileID: 9040263582317689631}
+  - {fileID: 3957941435337473096}
   EditorParameters: []
   MasterBanks:
-  - {fileID: 429921038001354484}
+  - {fileID: -5052162609451593570}
   StringsBanks:
-  - {fileID: 4833059702807810409}
-  stringsBankWriteTime: 637694598930985634
+  - {fileID: 4233355637240472109}
+  stringsBankWriteTime: 637694651278349876
   cacheVersion: 8
 --- !u!114 &148242325038114563
 MonoBehaviour:
@@ -731,7 +948,7 @@ MonoBehaviour:
   Path: event:/SFX/PLAYER/GUNS/SHOTGUN
   guid: 2be2bb6e6674e04b99b545b74b02ad34
   Banks:
-  - {fileID: 429921038001354484}
+  - {fileID: -5052162609451593570}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -761,6 +978,28 @@ MonoBehaviour:
   Type: 1
   IsGlobal: 0
   Exists: 0
+--- !u!114 &1063240786063635852
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/INGAME/Ennemies
+  m_EditorClassIdentifier: 
+  Name: Ennemies
+  Min: 0
+  Max: 100
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Type: 0
+  IsGlobal: 0
+  Exists: 0
 --- !u!114 &1224702601838866401
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -776,7 +1015,7 @@ MonoBehaviour:
   Path: event:/SFX/ENNEMIES/ENNEMIE_POP
   guid: 660e1b1e0462474ca4a8f25b71b1c424
   Banks:
-  - {fileID: 429921038001354484}
+  - {fileID: -5052162609451593570}
   IsStream: 1
   Is3D: 1
   IsOneShot: 1
@@ -806,6 +1045,28 @@ MonoBehaviour:
   Type: 1
   IsGlobal: 0
   Exists: 0
+--- !u!114 &1948816005792868502
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/INGAME/Ennemies
+  m_EditorClassIdentifier: 
+  Name: Ennemies
+  Min: 0
+  Max: 100
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Type: 0
+  IsGlobal: 0
+  Exists: 0
 --- !u!114 &1989408251188649983
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -826,6 +1087,94 @@ MonoBehaviour:
     data1: 0
     data2: 0
   Type: 1
+  IsGlobal: 0
+  Exists: 0
+--- !u!114 &2432524685909699706
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/INGAME/Vague
+  m_EditorClassIdentifier: 
+  Name: Vague
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Type: 1
+  IsGlobal: 0
+  Exists: 0
+--- !u!114 &2558087695733934963
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/INGAME/Vague
+  m_EditorClassIdentifier: 
+  Name: Vague
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Type: 1
+  IsGlobal: 0
+  Exists: 1
+--- !u!114 &2858336677617118516
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/INGAME/Vague
+  m_EditorClassIdentifier: 
+  Name: Vague
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Type: 1
+  IsGlobal: 0
+  Exists: 0
+--- !u!114 &2933210525505890218
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/INGAME/Ennemies
+  m_EditorClassIdentifier: 
+  Name: Ennemies
+  Min: 0
+  Max: 100
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Type: 0
   IsGlobal: 0
   Exists: 0
 --- !u!114 &3289657731050582175
@@ -887,7 +1236,7 @@ MonoBehaviour:
   Path: event:/SFX/PLAYER/DEPLACEMENT/WRAP
   guid: 602b18d0dd53914b9f1bc04cd60acd4f
   Banks:
-  - {fileID: 429921038001354484}
+  - {fileID: -5052162609451593570}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -895,6 +1244,29 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 0
+--- !u!114 &3957941435337473096
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/ENNEMIES/CHAINENNEMIE
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/ENNEMIES/CHAINENNEMIE
+  guid: e027bf81ae029249b03d5d24a84c36eb
+  Banks:
+  - {fileID: -5052162609451593570}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 3442
 --- !u!114 &4056220525297768963
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -917,7 +1289,49 @@ MonoBehaviour:
   Type: 1
   IsGlobal: 0
   Exists: 0
+--- !u!114 &4233355637240472109
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.strings.bank
+  m_EditorClassIdentifier: 
+  Path: Build FMOD/Desktop/Master.strings.bank
+  Name: Master.strings
+  StudioPath: bank:/Master.strings
+  lastModified: 637694651278349876
+  FileSizes:
+  - Name: 
+    Value: 1364
+  Exists: 1
 --- !u!114 &4367590596805786206
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/INGAME/Parameter 1
+  m_EditorClassIdentifier: 
+  Name: Parameter 1
+  Min: 0
+  Max: 100
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Type: 1
+  IsGlobal: 0
+  Exists: 0
+--- !u!114 &4625555763952747111
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -976,11 +1390,11 @@ MonoBehaviour:
   Path: ../../Son/Game Jam/Sound design Synthwave Shooter/Synth/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 637694598930985634
+  lastModified: 637694641165725681
   FileSizes:
   - Name: 
-    Value: 1276
-  Exists: 1
+    Value: 1364
+  Exists: 0
 --- !u!114 &4859853220980670663
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1158,6 +1572,28 @@ MonoBehaviour:
   Type: 1
   IsGlobal: 0
   Exists: 0
+--- !u!114 &6123957112061379530
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/INGAME/Ennemies
+  m_EditorClassIdentifier: 
+  Name: Ennemies
+  Min: 0
+  Max: 100
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Type: 0
+  IsGlobal: 0
+  Exists: 0
 --- !u!114 &6204734786365431809
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1239,6 +1675,28 @@ MonoBehaviour:
   Name: Parameter 1
   Min: 0
   Max: 100
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Type: 1
+  IsGlobal: 0
+  Exists: 0
+--- !u!114 &6634737032891143573
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/INGAME/Vague
+  m_EditorClassIdentifier: 
+  Name: Vague
+  Min: 0
+  Max: 1
   Default: 0
   ID:
     data1: 0
@@ -1438,7 +1896,7 @@ MonoBehaviour:
   Path: event:/SFX/PLAYER/GUNS/RAILGUN
   guid: d4c05503b8706a4ea057755078bdf9a9
   Banks:
-  - {fileID: 429921038001354484}
+  - {fileID: -5052162609451593570}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -1461,7 +1919,7 @@ MonoBehaviour:
   Path: event:/SFX/PLAYER/DEPLACEMENT/MOTOR
   guid: 749834ac889cc34181c27a3c07ef1ebf
   Banks:
-  - {fileID: 429921038001354484}
+  - {fileID: -5052162609451593570}
   IsStream: 0
   Is3D: 0
   IsOneShot: 0
