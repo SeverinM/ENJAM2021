@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 5065273026084135050}
   - component: {fileID: 6506964709701304757}
   - component: {fileID: 3016798658272946814}
+  - component: {fileID: 4020092841311064093}
   m_Layer: 0
   m_Name: RailgunShot
   m_TagString: Untagged
@@ -151,3 +152,26 @@ MonoBehaviour:
   destroyWhenHit: 0
   DestroyAfter: 0
   waitSecond: 0.15
+--- !u!114 &4020092841311064093
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5065273026084135061}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Event: event:/SFX/PLAYER/GUNS/RAILGUN
+  PlayEvent: 1
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 0
+  OverrideMaxDistance: 0

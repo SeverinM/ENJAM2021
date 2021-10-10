@@ -7,7 +7,7 @@
 [LOG] OutputWASAPI::init                       : Output buffer size: 4096 samples, latency: 0.00ms, period: 10.00ms, DSP buffer: 1024 * 4
 [LOG] Thread::initThread                       : Init FMOD stream thread. Affinity: 0x8000000000000003, Priority: 0xFFFF7FFB, Stack Size: 98304, Semaphore: No, Sleep Time: 10, Looping: Yes.
 [LOG] Thread::initThread                       : Init FMOD mixer thread. Affinity: 0x8000000000000001, Priority: 0xFFFF7FFA, Stack Size: 81920, Semaphore: No, Sleep Time: 0, Looping: Yes.
-[LOG] AsyncManager::init                       : manager 000002DD6ABBD178 isAsync 0 updatePeriod 0.02
+[LOG] AsyncManager::init                       : manager 000002A2A99855A8 isAsync 0 updatePeriod 0.02
 [LOG] AsyncManager::init                       : done
 [LOG] PlaybackSystem::init                     : 
 [LOG] Thread::initThread                       : Init FMOD Studio sample load thread. Affinity: 0x8000000000000003, Priority: 0xFFFF7FFD, Stack Size: 98304, Semaphore: No, Sleep Time: 1, Looping: No.
@@ -18,12 +18,127 @@
 [LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
 [LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
 [LOG] PlaybackSystem::acquireMasterBus         : Setting master channel group format to 3
+[LOG] SoundI::release                          : Gatling_Player (000002A2AF686A38)
+[LOG] SoundI::release                          :     Gatling_Player (000002A2B0299168)
+[LOG] SoundI::release                          :     Gatling_Player (000002A2AF68BB38)
 [LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
 [LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
 [LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
 [LOG] PlaybackSystem::acquireMasterBus         : Setting master channel group format to 3
-[LOG] SoundI::release                          :  (000002DD6A95AD38)
-[LOG] SoundI::release                          :     thruster_01 (000002DD3FFD4EC8)
+[LOG] SystemI::createSound                     : filename = ../../Son/Game Jam/Sound design Synthwave Shooter/Synth/Build/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 000002A2AF68A8A8 : node = 000002A4E48A9AB0
+[LOG] SystemI::createSound                     : add node to async list : head = 000002A48490F9C8.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000002A2AF68A8A8
+[LOG] SystemI::createSoundInternal             :     Create name='../../Son/Game Jam/Sound design Synthwave Shooter/Synth/Build/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 1396864
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 14624
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000002A4E48A9BC0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Gatling_Player', format=5, channels=1, frequency=48000, lengthbytes=4384, lengthpcm=6400, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.020294.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000002A2AF68A8A8
+[LOG] SoundI::release                          : Gatling_Player (000002A2AF68A8A8)
+[LOG] SoundI::release                          :     Gatling_Player (000002A2B0299168)
+[LOG] SoundI::release                          :     Gatling_Player (000002A2AF685958)
+[LOG] SystemI::createSound                     : filename = ../../Son/Game Jam/Sound design Synthwave Shooter/Synth/Build/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 000002A2AF68ADB8 : node = 000002A4E48A9AB0
+[LOG] SystemI::createSound                     : add node to async list : head = 000002A48490F9C8.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000002A2AF68ADB8
+[LOG] SystemI::createSoundInternal             :     Create name='../../Son/Game Jam/Sound design Synthwave Shooter/Synth/Build/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 1396864
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 14624
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000002A4E48A9BC0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Gatling_Player', format=5, channels=1, frequency=48000, lengthbytes=4384, lengthpcm=6400, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.020294.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000002A2AF68ADB8
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 1396864
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 14624
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000BC5384EFA8
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFB415360E0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFB415360B0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFB415361B0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFB41536270
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000002A2AF217618
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='Shotgun_1', format=5, channels=2, frequency=48000, lengthbytes=111616, lengthpcm=117923, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.828564.
+[LOG] SoundI::release                          : Gatling_Player (000002A2AF68ADB8)
+[LOG] SoundI::release                          :     Gatling_Player (000002A2B0299168)
+[LOG] SoundI::release                          :     Gatling_Player (000002A2AF68A8A8)
+[LOG] SystemI::createSound                     : filename = ../../Son/Game Jam/Sound design Synthwave Shooter/Synth/Build/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 000002A2AF68BB38 : node = 000002A4E48A9AB0
+[LOG] SystemI::createSound                     : add node to async list : head = 000002A48490F9C8.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000002A2AF68BB38
+[LOG] SystemI::createSoundInternal             :     Create name='../../Son/Game Jam/Sound design Synthwave Shooter/Synth/Build/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 1396864
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 14624
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000002A4E48A9BC0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Gatling_Player', format=5, channels=1, frequency=48000, lengthbytes=4384, lengthpcm=6400, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.020294.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000002A2AF68BB38
+[LOG] SoundI::release                          : Gatling_Player (000002A2AF68BB38)
+[LOG] SoundI::release                          :     Gatling_Player (000002A2B0299168)
+[LOG] SoundI::release                          :     Gatling_Player (000002A2AF685E68)
+[LOG] SystemI::createSound                     : filename = ../../Son/Game Jam/Sound design Synthwave Shooter/Synth/Build/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 000002A2AF68A8A8 : node = 000002A4E48A9AB0
+[LOG] SystemI::createSound                     : add node to async list : head = 000002A48490F9C8.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000002A2AF68A8A8
+[LOG] SystemI::createSoundInternal             :     Create name='../../Son/Game Jam/Sound design Synthwave Shooter/Synth/Build/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 1396864
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 14624
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000002A4E48A9BC0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Gatling_Player', format=5, channels=1, frequency=48000, lengthbytes=4384, lengthpcm=6400, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.020294.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000002A2AF68A8A8
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 1396864
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 14624
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000BC5384EFA8
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFB415360E0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFB415360B0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFB415361B0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFB41536270
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000002A487E751E8
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='Ennemies_Explosion', format=5, channels=2, frequency=48000, lengthbytes=136480, lengthpcm=167077, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.803695.
+[LOG] SoundI::release                          : Gatling_Player (000002A2AF68A8A8)
+[LOG] SoundI::release                          :     Gatling_Player (000002A2B0299168)
+[LOG] SoundI::release                          :     Gatling_Player (000002A2AF686A38)
+[LOG] SoundI::release                          :  (000002A2ADA255A8)
+[LOG] SoundI::release                          :     thruster_01 (000002A2B112B058)
+[LOG] SoundI::release                          :  (000002A2ADA1EE28)
+[LOG] SoundI::release                          :     Shotgun_1 (000002A2B112A4F8)
+[LOG] SoundI::release                          :  (000002A2ADA1F278)
+[LOG] SoundI::release                          :     Ennemies_Explosion (000002A2D66AA098)
 [LOG] Thread::callback                         : FMOD Studio update thread finished.
 [LOG] Thread::callback                         : FMOD Studio bank load thread finished.
 [LOG] Profile::disconnectAll                   : Profiler disconnecting all clients
