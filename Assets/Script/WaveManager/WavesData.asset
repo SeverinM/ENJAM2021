@@ -43,7 +43,7 @@ MonoBehaviour:
           m_RotationOrder: 0
         timeOffset: 0
         numberOfKillRequired: 0
-        prefab: {fileID: 4694597395554261859, guid: 0d67727d37b33c9458128e3b3966aece, type: 3}
+        prefab: {fileID: 5570283159150809518, guid: 4d7a87cbf2e144148a0db943cd9e7d2d, type: 3}
     - contexts:
       - startPosition: {x: -30, y: 0}
         goToPosition: {x: -2, y: -1}
