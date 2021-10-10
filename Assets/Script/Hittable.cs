@@ -15,6 +15,10 @@ public class Hittable : MonoBehaviour
 
     [SerializeField]
     int maxHP = 0;
+
+    [SerializeField]
+    float regenPerSecond = 0;
+    float currentRegen = 0.0f;
     public int MaxHP => maxHP;
     bool triggeredDeath = false;
 
@@ -67,8 +71,20 @@ public class Hittable : MonoBehaviour
     public void Heal(int value)
 	{
         HP += value;
+        HP = Mathf.Min(maxHP, HP);
         OnHeal?.Invoke(value);
 	}
+
+    private void Update()
+    {
+        currentRegen += regenPerSecond * Time.deltaTime;
+        if ( currentRegen >= 1.0f )
+        {
+            int ceiled = Mathf.CeilToInt(currentRegen);
+            Heal(ceiled);
+            currentRegen -= ceiled;
+        }
+    }
 
     Sequence seq = null;
     void StartRecovery()

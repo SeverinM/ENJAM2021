@@ -21,14 +21,14 @@ public class PlayerHolder : MonoBehaviour
 	{
 		hittable.OnStartRecovery += StartReco;
 		hittable.OnEndRecovery += EndReco;
-		hittable.OnDeath += () => Destroy(gameObject);
+		hittable.OnDeath += () => Application.Quit();
 	}
 
 	private void OnDisable()
 	{
 		hittable.OnStartRecovery -= StartReco;
 		hittable.OnEndRecovery -= EndReco;
-		hittable.OnDeath -= () => Destroy(gameObject);
+		hittable.OnDeath -= () => Application.Quit();
 	}
 
 	Tween tween = null;

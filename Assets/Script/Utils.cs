@@ -26,4 +26,14 @@ public class Utils : MonoBehaviour
 			.Append(gob.GetComponent<CanvasGroup>().DOFade(0.0f, fadeTime))
 			.AppendCallback(() => gob.SetActive(false)).SetUpdate(true).Play();
 	}
+
+	public void CreditROll(GameObject gob)
+	{
+		DOTween.Sequence()
+			.Append(gob.GetComponent<CanvasGroup>().DOFade(1, fadeTime))
+			.AppendInterval(3)
+			.AppendCallback(() => Application.Quit())
+			.SetUpdate(true)
+			.Play();
+	}
 }

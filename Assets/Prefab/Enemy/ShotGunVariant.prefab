@@ -45,10 +45,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fireRate: 0.5
   prefab: {fileID: 6987924788577973843, guid: d68ba838e99de9c4b837a2d84d5b7516, type: 3}
-  speedProjectile: 20
+  speedProjectile: 10
   speedInterval: 1
-  angleDispersion: 40
-  numberOfBullet: 10
+  angleDispersion: 50
+  numberOfBullet: 8
 --- !u!1001 &9163675635182648772
 PrefabInstance:
   m_ObjectHideFlags: 0

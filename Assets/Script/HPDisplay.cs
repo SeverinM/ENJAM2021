@@ -22,11 +22,13 @@ public class HPDisplay : MonoBehaviour
 	private void OnEnable()
 	{
 		hit.OnHit += (x) => UpdateLife();
+		hit.OnHeal += (x) => UpdateLife();
 	}
 
 	private void OnDisable()
 	{
 		hit.OnHit -= (x) => UpdateLife();
+		hit.OnHeal -= (x) => UpdateLife();
 	}
 
 	void UpdateLife()

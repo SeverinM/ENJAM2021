@@ -321,7 +321,7 @@ MonoBehaviour:
   sideID: 0
   HP: 10
   maxHP: 10
-  recoveryTime: 3
+  recoveryTime: 1
 --- !u!60 &8397371950281480528
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -601,7 +601,7 @@ MonoBehaviour:
   - {x: -3.1411448, y: -3.7028954, z: 0}
   m_ShapePathHash: -1797401269
   m_Mesh: {fileID: 0}
-  m_InstanceId: 36596
+  m_InstanceId: 39014
 --- !u!114 &-1128940162374837218
 MonoBehaviour:
   m_ObjectHideFlags: 0

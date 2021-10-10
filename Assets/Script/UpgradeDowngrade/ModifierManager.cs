@@ -12,6 +12,7 @@ public class ModifierManager : MonoBehaviour
 
 	public delegate void noParam(int value);
 	public event noParam OnPickedModifier;
+	public event noParam OnDisableSlot;
 
 	public delegate void ModifierParam(int slot, ModifierHolder.Modifier modifier);
 	public event ModifierParam OnUpdateSlot;
@@ -45,9 +46,14 @@ public class ModifierManager : MonoBehaviour
 			OnUpdateSlot?.Invoke(i, modifier);
 		}
 
-		for (int i = numberToFind; i < 3; i++)
+		if ( numberToFind == 2)
 		{
-			OnUpdateSlot?.Invoke(i, null);
+			OnDisableSlot?.Invoke(2);
+		}
+
+		if ( numberToFind == 1)
+		{
+			OnDisableSlot?.Invoke(1);
 		}
 	}
 

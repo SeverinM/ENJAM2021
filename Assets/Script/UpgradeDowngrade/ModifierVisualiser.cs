@@ -24,11 +24,21 @@ public class ModifierVisualiser : MonoBehaviour
     private void OnEnable()
     {
         ModifierManager.Instance.OnUpdateSlot += UpdateDisplay;
+        ModifierManager.Instance.OnDisableSlot += Disable;
     }
 
     private void OnDisable()
     {
         ModifierManager.Instance.OnUpdateSlot -= UpdateDisplay;
+        ModifierManager.Instance.OnDisableSlot -= Disable;
+    }
+
+    void Disable(int idSlot)
+    {
+        if ( id == idSlot )
+        {
+            gameObject.SetActive(false);
+        }
     }
 
     void UpdateDisplay(int _id, ModifierHolder.Modifier modifier)

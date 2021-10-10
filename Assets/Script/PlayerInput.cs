@@ -49,14 +49,7 @@ public class PlayerInput : MonoBehaviour
 
         if ( Camera.main != null)
         {
-            Vector3 topLeft = Camera.main.ViewportToWorldPoint(new Vector2(0, 1));
-            Vector3 topRight = Camera.main.ViewportToWorldPoint(new Vector2(1, 1));
-            Vector3 bottomLeft = Camera.main.ViewportToWorldPoint(new Vector2(0, 0));
-
-            Vector3 portMouse = Camera.main.ScreenToViewportPoint(mousePos);
-            Vector3 finalPos = bottomLeft;
-            finalPos += (topRight - topLeft) * portMouse.x;
-            finalPos += (topLeft - bottomLeft) * portMouse.y;
+            Vector3 finalPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
 
             DOTween.Sequence().AppendInterval(inputLag).AppendCallback(() => controller.SetupLookAt(finalPos)).SetAutoKill(true).Play();
         }
