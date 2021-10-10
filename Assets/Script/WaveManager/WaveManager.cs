@@ -18,6 +18,9 @@ public class WaveManager : MonoBehaviour
 	[SerializeField]
 	UnityEvent OnWaveEnd;
 
+	[SerializeField]
+	UnityEvent OnEnd;
+
 	private void OnEnable()
 	{
 		if (Instance == null)
@@ -36,6 +39,8 @@ public class WaveManager : MonoBehaviour
 	{
 		indexSubwave = 0;
 		indexWave++;
+		if (indexWave == currentData.waves.Count)
+			return;
 		currentWave = currentData.waves[indexWave];
 		CheckState();
 	}
@@ -70,7 +75,14 @@ public class WaveManager : MonoBehaviour
 			};
 		}
 
-		instance.transform.DOMove(context.goToPosition, 1.0f).SetEase(context.curve).SetAutoKill(true).Play();
+		instance.transform.DOMove(context.goToPosition, 1.0f).SetEase(context.curve).SetAutoKill(true)
+			.OnKill(() =>
+			{
+				if (instance.transform.GetComponent<EnemyAI>())
+				{
+					instance.transform.GetComponent<EnemyAI>().Block = false;
+				}
+			}).Play();
 
 	}
 
@@ -78,7 +90,17 @@ public class WaveManager : MonoBehaviour
 	{
 		DOTween.Sequence()
 			.AppendInterval(3.0f)
-			.AppendCallback(() => OnWaveEnd?.Invoke())
+			.AppendCallback(() =>
+			{
+				if ( indexWave == currentData.waves.Count - 1 )
+				{
+					OnEnd?.Invoke();
+				}
+				else
+				{
+					OnWaveEnd?.Invoke();
+				}	
+			})
 			.SetAutoKill(true)
 			.Play();
 	}
