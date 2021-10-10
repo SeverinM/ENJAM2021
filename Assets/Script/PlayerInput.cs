@@ -21,10 +21,6 @@ public class PlayerInput : MonoBehaviour
 	private void Start()
 	{
         rwPlayer = ReInput.players.GetPlayer(0);
-    }
-
-    private void OnEnable()
-    {
         ModifierManager.Instance.OnPickedModifier += AddInputLag;
     }
 

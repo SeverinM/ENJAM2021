@@ -9,6 +9,8 @@ public class EnemyAI : MonoBehaviour
     public static readonly Vector4 MapLimit = new Vector4(-20, 20, -11.3f, 11.3f);
     public static readonly Vector3[] Directions = {Vector2.right, -Vector2.right, Vector2.up, Vector2.down};
 
+    public bool Block = true;
+
     public enum EnemyTypes
     {
         Kamikaze,
@@ -38,7 +40,8 @@ public class EnemyAI : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.DOKill(); //FIX of a bug made by the wave manager !
+        if (Block)
+            return;
 
         _delay -= Time.deltaTime;
 
