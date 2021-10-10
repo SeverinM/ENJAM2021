@@ -39,28 +39,16 @@ public class Railgun : MonoBehaviour, IWeapon
 		}
 		if (shootingCooldown <= 0.0f && shooting)
 		{
-			StartCoroutine(Fire());
+			Fire();
 		}
 	}
 
-	 IEnumerator Fire()
+	void Fire()
 	{
-
 		shootingCooldown = 1.0f / fireRate;
-		yield return new WaitForSeconds(waitForCharge);
 		GameObject instance = Instantiate(prefab, parent);
-		RailgunShot proj = instance.GetComponent<RailgunShot>();
-		proj.transform.position = transform.position;
-
-		proj.transform.Translate(Vector3.up * 30f, Space.Self);
-
-
-		Vector2 finalDirection = Quaternion.AngleAxis(0, Vector3.forward) * transform.up;
-
-		if (proj != null)
-		{
-			proj.Direction = finalDirection;
-		}
-		proj.transform.parent = null;
+		instance.transform.localEulerAngles = new Vector3(0, 0, 90);
+		instance.transform.localPosition = Vector3.zero;
+		Destroy(instance, 0.75f);
 	}
 }

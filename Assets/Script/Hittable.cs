@@ -16,6 +16,7 @@ public class Hittable : MonoBehaviour
     [SerializeField]
     int maxHP = 0;
     public int MaxHP => maxHP;
+    bool triggeredDeath = false;
 
     public bool IsInvincible { get; private set; }
 
@@ -50,7 +51,11 @@ public class Hittable : MonoBehaviour
         OnHit?.Invoke(value);
         if (HP <= 0)
 		{
-            OnDeath?.Invoke();
+            if ( !triggeredDeath )
+            {
+                triggeredDeath = true;
+                OnDeath?.Invoke();
+            }
             Destroy(gameObject.transform.parent.gameObject);
 		}
         else if ( recoveryTime > 0)
