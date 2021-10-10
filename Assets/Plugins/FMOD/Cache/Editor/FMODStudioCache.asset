@@ -287,7 +287,7 @@ MonoBehaviour:
     data2: 0
   Type: 0
   IsGlobal: 0
-  Exists: 1
+  Exists: 0
 --- !u!114 &-6665466373667225210
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -595,7 +595,7 @@ MonoBehaviour:
     data2: 0
   Type: 1
   IsGlobal: 0
-  Exists: 1
+  Exists: 0
 --- !u!114 &-5080617505309985535
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -655,7 +655,7 @@ MonoBehaviour:
   Path: Build FMOD/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 637694755109586548
+  lastModified: 637694855540000000
   FileSizes: []
   Exists: 1
 --- !u!114 &-4780300158806496214
@@ -703,6 +703,28 @@ MonoBehaviour:
   Type: 1
   IsGlobal: 0
   Exists: 0
+--- !u!114 &-4713215411529420846
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/INGAME/Vague
+  m_EditorClassIdentifier: 
+  Name: Vague
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Type: 1
+  IsGlobal: 0
+  Exists: 1
 --- !u!114 &-4705891956904855840
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -923,6 +945,28 @@ MonoBehaviour:
   Type: 1
   IsGlobal: 0
   Exists: 0
+--- !u!114 &-2541063228843557678
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/INGAME/Vague
+  m_EditorClassIdentifier: 
+  Name: Vague
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Type: 1
+  IsGlobal: 0
+  Exists: 1
 --- !u!114 &-2511121891966839285
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -965,8 +1009,8 @@ MonoBehaviour:
   Is3D: 0
   IsOneShot: 0
   Parameters:
-  - {fileID: -5217006119999080127}
-  - {fileID: -6965048213569126916}
+  - {fileID: -4713215411529420846}
+  - {fileID: 2477909862809256703}
   MinDistance: 0
   MaxDistance: 0
   Length: 82366
@@ -1091,7 +1135,7 @@ MonoBehaviour:
   - {fileID: -5052162609451593570}
   StringsBanks:
   - {fileID: 4233355637240472109}
-  stringsBankWriteTime: 637694755109606496
+  stringsBankWriteTime: 637694855540000000
   cacheVersion: 8
 --- !u!114 &115338503648539295
 MonoBehaviour:
@@ -1377,6 +1421,28 @@ MonoBehaviour:
   Type: 1
   IsGlobal: 0
   Exists: 0
+--- !u!114 &2477909862809256703
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/INGAME/Ennemies
+  m_EditorClassIdentifier: 
+  Name: Ennemies
+  Min: 0
+  Max: 100
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Type: 0
+  IsGlobal: 0
+  Exists: 1
 --- !u!114 &2558087695733934963
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1443,6 +1509,28 @@ MonoBehaviour:
   Type: 0
   IsGlobal: 0
   Exists: 0
+--- !u!114 &2998478943894119727
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/INGAME/Ennemies
+  m_EditorClassIdentifier: 
+  Name: Ennemies
+  Min: 0
+  Max: 100
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Type: 0
+  IsGlobal: 0
+  Exists: 1
 --- !u!114 &3289657731050582175
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1570,7 +1658,7 @@ MonoBehaviour:
   Path: Build FMOD/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 637694755109606496
+  lastModified: 637694855540000000
   FileSizes:
   - Name: 
     Value: 1408
