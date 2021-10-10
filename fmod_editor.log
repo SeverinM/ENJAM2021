@@ -7,7 +7,7 @@
 [LOG] OutputWASAPI::init                       : Output buffer size: 4096 samples, latency: 0.00ms, period: 10.00ms, DSP buffer: 1024 * 4
 [LOG] Thread::initThread                       : Init FMOD stream thread. Affinity: 0x8000000000000003, Priority: 0xFFFF7FFB, Stack Size: 98304, Semaphore: No, Sleep Time: 10, Looping: Yes.
 [LOG] Thread::initThread                       : Init FMOD mixer thread. Affinity: 0x8000000000000001, Priority: 0xFFFF7FFA, Stack Size: 81920, Semaphore: No, Sleep Time: 0, Looping: Yes.
-[LOG] AsyncManager::init                       : manager 000002684EB9ABD8 isAsync 0 updatePeriod 0.02
+[LOG] AsyncManager::init                       : manager 000001D897437F58 isAsync 0 updatePeriod 0.02
 [LOG] AsyncManager::init                       : done
 [LOG] PlaybackSystem::init                     : 
 [LOG] Thread::initThread                       : Init FMOD Studio sample load thread. Affinity: 0x8000000000000003, Priority: 0xFFFF7FFD, Stack Size: 98304, Semaphore: No, Sleep Time: 1, Looping: No.
@@ -18,337 +18,265 @@
 [LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
 [LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
 [LOG] PlaybackSystem::acquireMasterBus         : Setting master channel group format to 3
-[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
-[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
-[LOG] SystemI::createSoundInternal             : exinfo->length             = 18267776
-[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 21184
-[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0000006832C5F018
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
-[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFED8B660E0
-[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFED8B660B0
-[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFED8B661B0
-[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFED8B66270
-[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000002684EDDAEF8
-[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
-[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
-[LOG] SystemI::createSoundInternal             : Sample 0/1: name='Shotgun_1', format=5, channels=2, frequency=48000, lengthbytes=111616, lengthpcm=117923, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.828564.
 [LOG] SystemI::createSound                     : filename = Build FMOD/Desktop/Master.bank : mode 02010082
 [LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
-[LOG] SystemI::createSound                     : setdata soundi = 00000268500025E8 : node = 00000265C6B26450
-[LOG] SystemI::createSound                     : add node to async list : head = 000002674F10ACB8.  list count = 0
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 00000268500025E8
+[LOG] SystemI::createSound                     : setdata soundi = 000001D94FF9D238 : node = 000001D6E94E6CB0
+[LOG] SystemI::createSound                     : add node to async list : head = 000001D94F225518.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001D94FF9D238
+[LOG] SystemI::createSound                     : filename = Build FMOD/Desktop/Master.bank : mode 02010082
 [LOG] SystemI::createSoundInternal             :     Create name='Build FMOD/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
 [LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSound                     :     setdata soundi = 000001D94FF98D08 : node = 000001D6E94E9FF0
 [LOG] SystemI::createSoundInternal             :     exinfo->length             = 18267776
+[LOG] SystemI::createSound                     :     add node to async list : head = 000001D94F225518.  list count = 0
 [LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 21184
 [LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 00000265C6B26560
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
-[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Gatling_Player', format=5, channels=1, frequency=48000, lengthbytes=4384, lengthpcm=6400, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.020294.
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 00000268500025E8
-[LOG] SystemI::createSound                     : filename = Build FMOD/Desktop/Master.bank : mode 02010082
-[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
-[LOG] SystemI::createSound                     : setdata soundi = 000002684FFFE778 : node = 0000026782372730
-[LOG] SystemI::createSound                     : add node to async list : head = 000002674F10ACB8.  list count = 0
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000002684FFFE778
-[LOG] SystemI::createSoundInternal             :     Create name='Build FMOD/Desktop/Master.bank', mode=0x02010082
-[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
-[LOG] SystemI::createSoundInternal             :     exinfo->length             = 18267776
-[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 21184
-[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000026782372840
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
-[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Gatling_Player', format=5, channels=1, frequency=48000, lengthbytes=4384, lengthpcm=6400, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.020294.
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000002684FFFE778
-[LOG] SoundI::release                          : Gatling_Player (00000268500025E8)
-[LOG] SoundI::release                          :     Gatling_Player (0000026783FDA9D8)
-[LOG] SoundI::release                          :     Gatling_Player (000002684FFFD9F8)
-[LOG] SystemI::createSound                     : filename = Build FMOD/Desktop/Master.bank : mode 02010082
-[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
-[LOG] SystemI::createSound                     : setdata soundi = 000002684FFFD9F8 : node = 00000265C6B266D0
-[LOG] SystemI::createSound                     : add node to async list : head = 000002674F10ACB8.  list count = 0
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000002684FFFD9F8
-[LOG] SystemI::createSoundInternal             :     Create name='Build FMOD/Desktop/Master.bank', mode=0x02010082
-[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
-[LOG] SystemI::createSoundInternal             :     exinfo->length             = 18267776
-[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 21184
-[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 00000265C6B267E0
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
-[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Gatling_Player', format=5, channels=1, frequency=48000, lengthbytes=4384, lengthpcm=6400, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.020294.
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000002684FFFD9F8
-[LOG] SoundI::release                          : Gatling_Player (000002684FFFE778)
-[LOG] SoundI::release                          :     Gatling_Player (0000026783FDCBF8)
-[LOG] SoundI::release                          :     Gatling_Player (0000026850001D78)
-[LOG] SystemI::createSound                     : filename = Build FMOD/Desktop/Master.bank : mode 02010082
-[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
-[LOG] SystemI::createSound                     : setdata soundi = 000002684FFFF858 : node = 0000026829301F90
-[LOG] SystemI::createSound                     : add node to async list : head = 000002674F10ACB8.  list count = 0
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000002684FFFF858
-[LOG] SystemI::createSoundInternal             :     Create name='Build FMOD/Desktop/Master.bank', mode=0x02010082
-[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
-[LOG] SystemI::createSoundInternal             :     exinfo->length             = 18267776
-[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 21184
-[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 00000268293020A0
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
-[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Gatling_Player', format=5, channels=1, frequency=48000, lengthbytes=4384, lengthpcm=6400, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.020294.
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000002684FFFF858
-[LOG] SoundI::release                          : Gatling_Player (000002684FFFD9F8)
-[LOG] SoundI::release                          :     Gatling_Player (0000026783FDA9D8)
-[LOG] SoundI::release                          :     Gatling_Player (0000026850000FF8)
-[LOG] SystemI::createSound                     : filename = Build FMOD/Desktop/Master.bank : mode 02010082
-[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
-[LOG] SystemI::createSound                     : setdata soundi = 0000026850001508 : node = 00000267823729B0
-[LOG] SystemI::createSound                     : add node to async list : head = 000002674F10ACB8.  list count = 0
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000026850001508
-[LOG] SystemI::createSoundInternal             :     Create name='Build FMOD/Desktop/Master.bank', mode=0x02010082
-[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
-[LOG] SystemI::createSoundInternal             :     exinfo->length             = 18267776
-[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 21184
-[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000026782372AC0
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
-[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Gatling_Player', format=5, channels=1, frequency=48000, lengthbytes=4384, lengthpcm=6400, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.020294.
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000026850001508
-[LOG] SoundI::release                          : Gatling_Player (000002684FFFF858)
-[LOG] SoundI::release                          :     Gatling_Player (0000026783FDAB78)
-[LOG] SoundI::release                          :     Gatling_Player (0000026850003008)
-[LOG] SystemI::createSound                     : filename = Build FMOD/Desktop/Master.bank : mode 02010082
-[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
-[LOG] SystemI::createSound                     : setdata soundi = 0000026850003008 : node = 00000265C98DECD0
-[LOG] SystemI::createSound                     : add node to async list : head = 000002674F10ACB8.  list count = 0
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000026850003008
-[LOG] SystemI::createSoundInternal             :     Create name='Build FMOD/Desktop/Master.bank', mode=0x02010082
-[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
-[LOG] SystemI::createSoundInternal             :     exinfo->length             = 18267776
-[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 21184
-[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 00000265C98DEDE0
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
-[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Gatling_Player', format=5, channels=1, frequency=48000, lengthbytes=4384, lengthpcm=6400, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.020294.
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000026850003008
-[LOG] SoundI::release                          : Gatling_Player (0000026850001508)
-[LOG] SoundI::release                          :     Gatling_Player (0000026783FDA9D8)
-[LOG] SoundI::release                          :     Gatling_Player (000002684FFFE778)
-[LOG] SystemI::createSound                     : filename = Build FMOD/Desktop/Master.bank : mode 02010082
-[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
-[LOG] SystemI::createSound                     : setdata soundi = 000002684FFFE778 : node = 00000267823738B0
-[LOG] SystemI::createSound                     : add node to async list : head = 000002674F10ACB8.  list count = 0
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000002684FFFE778
-[LOG] SystemI::createSoundInternal             :     Create name='Build FMOD/Desktop/Master.bank', mode=0x02010082
-[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
-[LOG] SystemI::createSoundInternal             :     exinfo->length             = 18267776
-[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 21184
-[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 00000267823739C0
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
-[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Gatling_Player', format=5, channels=1, frequency=48000, lengthbytes=4384, lengthpcm=6400, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.020294.
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000002684FFFE778
-[LOG] SystemI::createSound                     : filename = Build FMOD/Desktop/Master.bank : mode 02010082
-[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
-[LOG] SystemI::createSound                     : setdata soundi = 000002684FFFF4F8 : node = 00000267823733B0
-[LOG] SystemI::createSound                     : add node to async list : head = 000002674F10ACB8.  list count = 0
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000002684FFFF4F8
-[LOG] SystemI::createSoundInternal             :     Create name='Build FMOD/Desktop/Master.bank', mode=0x02010082
-[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
-[LOG] SystemI::createSoundInternal             :     exinfo->length             = 18267776
-[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 21184
-[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 00000267823734C0
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
-[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Gatling_Player', format=5, channels=1, frequency=48000, lengthbytes=4384, lengthpcm=6400, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.020294.
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000002684FFFF4F8
-[LOG] SoundI::release                          : Gatling_Player (0000026850003008)
-[LOG] SoundI::release                          :     Gatling_Player (0000026783FD75D8)
-[LOG] SoundI::release                          :     Gatling_Player (000002684FFFE268)
-[LOG] SoundI::release                          : Gatling_Player (000002684FFFE778)
-[LOG] SoundI::release                          :     Gatling_Player (0000026783FDAEB8)
-[LOG] SoundI::release                          :     Gatling_Player (000002684FFFE928)
-[LOG] SystemI::createSound                     : filename = Build FMOD/Desktop/Master.bank : mode 02010082
-[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
-[LOG] SystemI::createSound                     : setdata soundi = 000002684FFFE778 : node = 00000268293016D0
-[LOG] SystemI::createSound                     : add node to async list : head = 000002674F10ACB8.  list count = 0
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000002684FFFE778
-[LOG] SystemI::createSoundInternal             :     Create name='Build FMOD/Desktop/Master.bank', mode=0x02010082
-[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
-[LOG] SystemI::createSoundInternal             :     exinfo->length             = 18267776
-[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 21184
-[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 00000268293017E0
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
-[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Gatling_Player', format=5, channels=1, frequency=48000, lengthbytes=4384, lengthpcm=6400, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.020294.
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000002684FFFE778
-[LOG] SoundI::release                          : Gatling_Player (000002684FFFF4F8)
-[LOG] SoundI::release                          :     Gatling_Player (0000026783FDCBF8)
-[LOG] SoundI::release                          :     Gatling_Player (000002684FFFD9F8)
-[LOG] SystemI::createSound                     : filename = Build FMOD/Desktop/Master.bank : mode 02010082
-[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
-[LOG] SystemI::createSound                     : setdata soundi = 0000026850003008 : node = 0000026829303750
-[LOG] SystemI::createSound                     : add node to async list : head = 000002674F10ACB8.  list count = 0
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000026850003008
-[LOG] SystemI::createSoundInternal             :     Create name='Build FMOD/Desktop/Master.bank', mode=0x02010082
-[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
-[LOG] SystemI::createSoundInternal             :     exinfo->length             = 18267776
-[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 21184
-[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000026829303860
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
-[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Gatling_Player', format=5, channels=1, frequency=48000, lengthbytes=4384, lengthpcm=6400, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.020294.
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000026850003008
-[LOG] SoundI::release                          : Gatling_Player (000002684FFFE778)
-[LOG] SoundI::release                          :     Gatling_Player (0000026783FD8958)
-[LOG] SoundI::release                          :     Gatling_Player (000002684FFFE928)
-[LOG] SystemI::createSound                     : filename = Build FMOD/Desktop/Master.bank : mode 02010082
-[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
-[LOG] SystemI::createSound                     : setdata soundi = 000002684FFFF4F8 : node = 00000265C98DECD0
-[LOG] SystemI::createSound                     : add node to async list : head = 000002674F10ACB8.  list count = 0
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000002684FFFF4F8
-[LOG] SystemI::createSoundInternal             :     Create name='Build FMOD/Desktop/Master.bank', mode=0x02010082
-[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
-[LOG] SystemI::createSoundInternal             :     exinfo->length             = 18267776
-[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 21184
-[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 00000265C98DEDE0
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
-[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Gatling_Player', format=5, channels=1, frequency=48000, lengthbytes=4384, lengthpcm=6400, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.020294.
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000002684FFFF4F8
-[LOG] SoundI::release                          : Gatling_Player (0000026850003008)
-[LOG] SoundI::release                          :     Gatling_Player (0000026783FD7778)
-[LOG] SoundI::release                          :     Gatling_Player (0000026850002438)
-[LOG] SystemI::createSound                     : filename = Build FMOD/Desktop/Master.bank : mode 02010082
-[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
-[LOG] SystemI::createSound                     : setdata soundi = 000002684FFFEC88 : node = 0000026829304F10
-[LOG] SystemI::createSound                     : add node to async list : head = 000002674F10ACB8.  list count = 0
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000002684FFFEC88
-[LOG] SystemI::createSoundInternal             :     Create name='Build FMOD/Desktop/Master.bank', mode=0x02010082
-[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
-[LOG] SystemI::createSoundInternal             :     exinfo->length             = 18267776
-[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 21184
-[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000026829305020
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
-[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Gatling_Player', format=5, channels=1, frequency=48000, lengthbytes=4384, lengthpcm=6400, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.020294.
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000002684FFFEC88
-[LOG] SoundI::release                          : Gatling_Player (000002684FFFF4F8)
-[LOG] SoundI::release                          :     Gatling_Player (0000026783FDA9D8)
-[LOG] SoundI::release                          :     Gatling_Player (000002684FFFF6A8)
-[LOG] SystemI::createSound                     : filename = Build FMOD/Desktop/Master.bank : mode 02010082
-[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
-[LOG] SystemI::createSound                     : setdata soundi = 0000026850001508 : node = 00000265C98DE7D0
-[LOG] SystemI::createSound                     : add node to async list : head = 000002674F10ACB8.  list count = 0
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000026850001508
-[LOG] SystemI::createSoundInternal             :     Create name='Build FMOD/Desktop/Master.bank', mode=0x02010082
-[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
-[LOG] SystemI::createSoundInternal             :     exinfo->length             = 18267776
-[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 21184
-[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 00000265C98DE8E0
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
-[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Gatling_Player', format=5, channels=1, frequency=48000, lengthbytes=4384, lengthpcm=6400, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.020294.
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000026850001508
-[LOG] SystemI::createSound                     : filename = Build FMOD/Desktop/Master.bank : mode 02010082
-[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
-[LOG] SystemI::createSound                     : setdata soundi = 000002684FFFF6A8 : node = 00000265C6B26450
-[LOG] SystemI::createSound                     : add node to async list : head = 000002674F10ACB8.  list count = 0
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000002684FFFF6A8
-[LOG] SoundI::release                          : Gatling_Player (000002684FFFEC88)
-[LOG] SystemI::createSoundInternal             :     Create name='Build FMOD/Desktop/Master.bank', mode=0x02010082
-[LOG] SystemI::createSoundInternal             :         exinfo->cbsize             = 224
-[LOG] SoundI::release                          :         Gatling_Player (0000026783FDCBF8)
-[LOG] SystemI::createSoundInternal             :         exinfo->length             = 18267776
-[LOG] SoundI::release                          :         Gatling_Player (0000026850001D78)
-[LOG] SystemI::createSoundInternal             :         exinfo->fileoffset         = 21184
-[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 00000265C6B26560
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
-[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Gatling_Player', format=5, channels=1, frequency=48000, lengthbytes=4384, lengthpcm=6400, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.020294.
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000002684FFFF6A8
-[LOG] SoundI::release                          : Gatling_Player (0000026850001508)
-[LOG] SoundI::release                          :     Gatling_Player (0000026783FD7F98)
-[LOG] SoundI::release                          :     Gatling_Player (000002684FFFF4F8)
-[LOG] SoundI::release                          : Gatling_Player (000002684FFFF6A8)
-[LOG] SoundI::release                          :     Gatling_Player (0000026783FD87B8)
-[LOG] SoundI::release                          :     Gatling_Player (000002684FFFD9F8)
-[LOG] SystemI::createSound                     : filename = Build FMOD/Desktop/Master.bank : mode 02010082
-[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
-[LOG] SystemI::createSound                     : setdata soundi = 000002684FFFEC88 : node = 00000265C98DECD0
-[LOG] SystemI::createSound                     : add node to async list : head = 000002674F10ACB8.  list count = 0
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000002684FFFEC88
-[LOG] SystemI::createSoundInternal             :     Create name='Build FMOD/Desktop/Master.bank', mode=0x02010082
-[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
-[LOG] SystemI::createSoundInternal             :     exinfo->length             = 18267776
-[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 21184
-[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 00000265C98DEDE0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001D6E94E6DC0
 [LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
 [LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
 [LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
 [LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Intro_2', format=5, channels=2, frequency=48000, lengthbytes=2575200, lengthpcm=2277818, pcmblocksize=0, loopstart=0, loopend=837817, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.304533.
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000002684FFFEC88
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000026850002798
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000026850002798
-[LOG] SoundI::release                          : Intro_2 (000002684FFFEFE8)
-[LOG] SoundI::release                          :     Intro_2 (0000026783FDA698)
-[LOG] SoundI::release                          :     Intro_2 (0000026850002AF8)
-[LOG] SystemI::createSound                     : filename = Build FMOD/Desktop/Master.bank : mode 02010082
-[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
-[LOG] SystemI::createSound                     : setdata soundi = 000002684FFFE778 : node = 00000265C83B0E60
-[LOG] SystemI::createSound                     : add node to async list : head = 000002674F10ACB8.  list count = 0
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000002684FFFE778
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001D94FF9D238
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001D94FF98D08
 [LOG] SystemI::createSoundInternal             :     Create name='Build FMOD/Desktop/Master.bank', mode=0x02010082
 [LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
 [LOG] SystemI::createSoundInternal             :     exinfo->length             = 18267776
 [LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 21184
 [LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 00000265C83B0F70
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001D6E94EA100
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 17454
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Synthwave_Shooter_Intro', format=5, channels=2, frequency=48000, lengthbytes=3502816, lengthpcm=3115773, pcmblocksize=0, loopstart=0, loopend=1675635, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.436690.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001D94FF98D08
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001D94FF97718
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001D94FF97718
+[LOG] SoundI::release                          : Intro_2 (000001D94FFA1AC8)
+[LOG] SoundI::release                          :     Intro_2 (000001D6E3C84708)
+[LOG] SoundI::release                          :     Intro_2 (000001D94FFA35C8)
+[LOG] SoundI::release                          : Intro_2 (000001D94FF9F248)
+[LOG] SoundI::release                          :     Intro_2 (000001D6E3C84F28)
+[LOG] SoundI::release                          :     Intro_2 (000001D94FFA2BA8)
+[LOG] SystemI::createSound                     : filename = Build FMOD/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 000001D94FFA50C8 : node = 000001D881E67980
+[LOG] SystemI::createSound                     : add node to async list : head = 000001D94F225518.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001D94FFA50C8
+[LOG] SystemI::createSound                     : filename = Build FMOD/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSoundInternal             :     Create name='Build FMOD/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSound                     :     setdata soundi = 000001D94FFA8BD8 : node = 000001D881E69280
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 18267776
+[LOG] SystemI::createSound                     :     add node to async list : head = 000001D94F225518.  list count = 0
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 21184
+[LOG] SystemI::createSound                     :     filename = Build FMOD/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001D881E67A90
+[LOG] SystemI::createSound                     :     setdata soundi = 000001D94FFA8F38 : node = 000001D881E693C0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSound                     :     add node to async list : head = 000001D94F225518.  list count = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSound                     :     filename = Build FMOD/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     :     setdata soundi = 000001D94FFA90E8 : node = 000001D881E69640
+[LOG] SystemI::createSound                     :     add node to async list : head = 000001D94F225518.  list count = 2
+[LOG] SystemI::createSound                     :     filename = Build FMOD/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     :     setdata soundi = 000001D94FFA9958 : node = 000001D881E67340
+[LOG] SystemI::createSound                     :     add node to async list : head = 000001D94F225518.  list count = 3
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Intro_2', format=5, channels=2, frequency=48000, lengthbytes=2575200, lengthpcm=2277818, pcmblocksize=0, loopstart=0, loopend=837817, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.304533.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001D94FFA50C8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001D94FFA8BD8
+[LOG] SystemI::createSoundInternal             :     Create name='Build FMOD/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 18267776
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 21184
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001D881E69390
 [LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
 [LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
 [LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Synthwave_Shooter_Music_Core', format=5, channels=2, frequency=48000, lengthbytes=2597920, lengthpcm=2277818, pcmblocksize=0, loopstart=0, loopend=837817, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.749153.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001D94FFA8BD8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001D94FFA8F38
+[LOG] SystemI::createSoundInternal             :     Create name='Build FMOD/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 18267776
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 21184
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001D881E694D0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Synthwave_Shooter_Music_Arpeggios', format=5, channels=2, frequency=48000, lengthbytes=2622496, lengthpcm=2277955, pcmblocksize=0, loopstart=0, loopend=837817, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.144396.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001D94FFA8F38
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001D94FFA90E8
+[LOG] SystemI::createSoundInternal             :     Create name='Build FMOD/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 18267776
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 21184
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001D881E69750
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Synthwave_Shooter_Music_Hats', format=5, channels=2, frequency=48000, lengthbytes=2609344, lengthpcm=2277955, pcmblocksize=0, loopstart=0, loopend=837817, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.394391.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001D94FFA90E8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001D94FFA9958
+[LOG] SystemI::createSoundInternal             :     Create name='Build FMOD/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 18267776
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 21184
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001D881E67450
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Synthwave_Shooter_Music_Cymbals', format=5, channels=2, frequency=48000, lengthbytes=2724608, lengthpcm=2277955, pcmblocksize=0, loopstart=0, loopend=837817, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.329305.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001D94FFA9958
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001D94FFA9E68
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001D94FFA9E68
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001D94FFA5788
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001D94FFA5788
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001D94FFAF628
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001D94FFAF628
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001D94FFAD7C8
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001D94FFAD7C8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001D94FFAE8A8
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001D94FFAE8A8
+[LOG] SoundI::release                          : Synthwave_Shooter_Intro (000001D94FF98D08)
+[LOG] SoundI::release                          :     Synthwave_Shooter_Intro (000001D6E34ED278)
+[LOG] SoundI::release                          :     Synthwave_Shooter_Intro (000001D94FF9BA98)
+[LOG] SoundI::release                          : Intro_2 (000001D94FF9D238)
+[LOG] SoundI::release                          :     Intro_2 (000001D6E34ED0D8)
+[LOG] SoundI::release                          :     Intro_2 (000001D94FF97718)
+[LOG] SystemI::createSound                     : filename = Build FMOD/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 000001D94FF98138 : node = 000001D881E675C0
+[LOG] SystemI::createSound                     : add node to async list : head = 000001D94F225518.  list count = 0
+[LOG] SystemI::createSound                     : filename = Build FMOD/Desktop/Master.bank : mode 02010082
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001D94FF98138
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSoundInternal             :     Create name='Build FMOD/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSound                     :     setdata soundi = 000001D94FF99F98 : node = 000001D881E670C0
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSound                     :     add node to async list : head = 000001D94F225518.  list count = 0
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 18267776
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 21184
+[LOG] SystemI::createSound                     :     filename = Build FMOD/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001D881E676D0
+[LOG] SystemI::createSound                     :     setdata soundi = 000001D94FF9AEC8 : node = 000001D881E67700
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSound                     :     add node to async list : head = 000001D94F225518.  list count = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSound                     :     filename = Build FMOD/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     :     setdata soundi = 000001D94FF993C8 : node = 000001D881E69B40
+[LOG] SystemI::createSound                     :     add node to async list : head = 000001D94F225518.  list count = 2
+[LOG] SystemI::createSound                     :     filename = Build FMOD/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     :     setdata soundi = 000001D94FF9B738 : node = 000001D881E69C80
+[LOG] SystemI::createSound                     :     add node to async list : head = 000001D94F225518.  list count = 3
 [LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Intro_2', format=5, channels=2, frequency=48000, lengthbytes=2575200, lengthpcm=2277818, pcmblocksize=0, loopstart=0, loopend=837817, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.304533.
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000002684FFFE778
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000002684FFFE928
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000002684FFFE928
-[LOG] SoundI::release                          : Intro_2 (000002684FFFEC88)
-[LOG] SoundI::release                          :     Intro_2 (0000026783FDCBF8)
-[LOG] SoundI::release                          :     Intro_2 (0000026850002798)
-[LOG] SoundI::release                          :  (0000026829BA6828)
-[LOG] SoundI::release                          :     thruster_01 (0000026783FDA358)
-[LOG] SoundI::release                          : Intro_2 (000002684FFFE778)
-[LOG] SoundI::release                          :     Intro_2 (0000026783FDCD98)
-[LOG] SoundI::release                          :     Intro_2 (000002684FFFE928)
-[LOG] SoundI::release                          :  (00000267833BDBE8)
-[LOG] SoundI::release                          :     Shotgun_1 (0000026783FDA4F8)
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001D94FF98138
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001D94FF99F98
+[LOG] SystemI::createSoundInternal             :     Create name='Build FMOD/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 18267776
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 21184
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001D881E671D0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Synthwave_Shooter_Music_Core', format=5, channels=2, frequency=48000, lengthbytes=2597920, lengthpcm=2277818, pcmblocksize=0, loopstart=0, loopend=837817, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.749153.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001D94FF99F98
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001D94FF9AEC8
+[LOG] SystemI::createSoundInternal             :     Create name='Build FMOD/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 18267776
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 21184
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001D881E67810
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Synthwave_Shooter_Music_Arpeggios', format=5, channels=2, frequency=48000, lengthbytes=2622496, lengthpcm=2277955, pcmblocksize=0, loopstart=0, loopend=837817, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.144396.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001D94FF9AEC8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001D94FF993C8
+[LOG] SystemI::createSoundInternal             :     Create name='Build FMOD/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 18267776
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 21184
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001D881E69C50
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Synthwave_Shooter_Music_Hats', format=5, channels=2, frequency=48000, lengthbytes=2609344, lengthpcm=2277955, pcmblocksize=0, loopstart=0, loopend=837817, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.394391.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001D94FF993C8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001D94FF9B738
+[LOG] SystemI::createSoundInternal             :     Create name='Build FMOD/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 18267776
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 21184
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001D881E69D90
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Synthwave_Shooter_Music_Cymbals', format=5, channels=2, frequency=48000, lengthbytes=2724608, lengthpcm=2277955, pcmblocksize=0, loopstart=0, loopend=837817, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.329305.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001D94FF9B738
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001D94FF9B228
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001D94FF9B228
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001D94FF99728
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001D94FF99728
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001D94FF998D8
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001D94FF998D8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001D94FF97208
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001D94FF97208
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001D94FF9A4A8
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001D94FF9A4A8
+[LOG] SoundI::release                          : Synthwave_Shooter_Music_Cymbals (000001D94FFA9958)
+[LOG] SoundI::release                          :     Synthwave_Shooter_Music_Cymbals (000001D6E3C84708)
+[LOG] SoundI::release                          :     Synthwave_Shooter_Music_Cymbals (000001D94FFAE8A8)
+[LOG] SoundI::release                          : Synthwave_Shooter_Music_Hats (000001D94FFA90E8)
+[LOG] SoundI::release                          :     Synthwave_Shooter_Music_Hats (000001D6E34ED758)
+[LOG] SoundI::release                          :     Synthwave_Shooter_Music_Hats (000001D94FFAD7C8)
+[LOG] SoundI::release                          : Synthwave_Shooter_Music_Arpeggios (000001D94FFA8F38)
+[LOG] SoundI::release                          :     Synthwave_Shooter_Music_Arpeggios (000001D6E34EE458)
+[LOG] SoundI::release                          :     Synthwave_Shooter_Music_Arpeggios (000001D94FFAF628)
+[LOG] SoundI::release                          : Synthwave_Shooter_Music_Core (000001D94FFA8BD8)
+[LOG] SoundI::release                          :     Synthwave_Shooter_Music_Core (000001D6E34ED5B8)
+[LOG] SoundI::release                          :     Synthwave_Shooter_Music_Core (000001D94FFA5788)
+[LOG] SoundI::release                          : Intro_2 (000001D94FFA50C8)
+[LOG] SoundI::release                          :     Intro_2 (000001D6E34ED418)
+[LOG] SoundI::release                          :     Intro_2 (000001D94FFA9E68)
+[LOG] SoundI::release                          :  (000001D6E72AD7C8)
+[LOG] SoundI::release                          :     thruster_01 (000001D6E3C81CC8)
+[LOG] SoundI::release                          : Intro_2 (000001D94FF98138)
+[LOG] SoundI::release                          :     Intro_2 (000001D6E3C82688)
+[LOG] SoundI::release                          :     Intro_2 (000001D94FF9B228)
+[LOG] SoundI::release                          : Synthwave_Shooter_Music_Cymbals (000001D94FF9B738)
+[LOG] SoundI::release                          :     Synthwave_Shooter_Music_Cymbals (000001D6E69BF1B8)
+[LOG] SoundI::release                          :     Synthwave_Shooter_Music_Cymbals (000001D94FF9A4A8)
+[LOG] SoundI::release                          : Synthwave_Shooter_Music_Hats (000001D94FF993C8)
+[LOG] SoundI::release                          :     Synthwave_Shooter_Music_Hats (000001D6E3C829C8)
+[LOG] SoundI::release                          :     Synthwave_Shooter_Music_Hats (000001D94FF97208)
+[LOG] SoundI::release                          : Synthwave_Shooter_Music_Arpeggios (000001D94FF9AEC8)
+[LOG] SoundI::release                          :     Synthwave_Shooter_Music_Arpeggios (000001D6E3C82828)
+[LOG] SoundI::release                          :     Synthwave_Shooter_Music_Arpeggios (000001D94FF998D8)
+[LOG] SoundI::release                          : Synthwave_Shooter_Music_Core (000001D94FF99F98)
+[LOG] SoundI::release                          :     Synthwave_Shooter_Music_Core (000001D6E3C84F28)
+[LOG] SoundI::release                          :     Synthwave_Shooter_Music_Core (000001D94FF99728)
 [LOG] Thread::callback                         : FMOD Studio update thread finished.
 [LOG] Thread::callback                         : FMOD Studio bank load thread finished.
 [LOG] Profile::disconnectAll                   : Profiler disconnecting all clients

@@ -19,6 +19,9 @@ public class WaveManager : MonoBehaviour
 	UnityEvent OnWaveEnd;
 
 	[SerializeField]
+	UnityEvent OnWaveStart;
+
+	[SerializeField]
 	UnityEvent OnEnd;
 
 	private void OnEnable()
@@ -35,6 +38,7 @@ public class WaveManager : MonoBehaviour
 
 	public void NextWave()
 	{
+		OnWaveStart?.Invoke();
 		indexSubwave = 0;
 		indexWave++;
 		if (indexWave == currentData.waves.Count)
